@@ -1,0 +1,113 @@
+.distortion {
+  width: 400px;
+  height: 300px;
+  margin: 5px;
+}
+
+.distortion1 {
+  width: 400px;
+  height: 300px;
+  margin: 5px;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 3px solid #5c5656;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background: #0b4b0f;
+  height: 200px;
+  color: white;
+}
+
+.svg-div {
+  height: 300px;
+  width: 300px;
+  border: 2px solid red;
+}
+
+.path {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 5s linear infinite;
+          animation: dash 5s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path1 {
+  stroke-dasharray: 45;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 8s linear infinite;
+          animation: dash 8s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.svg-div-line {
+  height: 4100px;
+  width: 100vw;
+  overflow: hidden;
+  background: #020024;
+  position: relative;
+}
+
+.svg-div-line .cover {
+  position: absolute;
+  z-index: 99999;
+  top: 150px;
+  height: 4100px;
+  width: 100vw;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(94%, #020024), color-stop(98%, rgba(9, 9, 121, 0.00603992)), to(rgba(0, 212, 255, 0)));
+  background: linear-gradient(0deg, #020024 94%, rgba(9, 9, 121, 0.00603992) 98%, rgba(0, 212, 255, 0) 100%);
+}
+/*# sourceMappingURL=main.css.map */

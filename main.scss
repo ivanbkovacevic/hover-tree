@@ -1,0 +1,93 @@
+.distortion{
+    width: 400px;
+    height: 300px;  
+    margin: 5px;
+}
+
+.distortion1{
+    width: 400px;
+    height: 300px;  
+    margin: 5px;
+}
+
+.landing{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 3px solid rgb(92, 86, 86);
+
+
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(11, 75, 15);
+    height: 200px;
+    color: white;
+}
+
+.svg-div{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+}
+
+.path {
+    stroke-dasharray: 20;
+    stroke-dashoffset: 1000;
+    animation:dash 5s linear infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+      }
+  }
+
+  .path1 {
+    stroke-dasharray: 45;
+    stroke-dashoffset: 0;
+    animation:dash 8s linear infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 10;
+    }
+    to {
+        stroke-dashoffset: 1000;
+      }
+  }
+
+  .svg-div-line{
+    height: 4100px;
+    width: 100vw;
+   overflow: hidden;
+    background: rgb(2,0,36);
+    position: relative;
+
+    .cover{
+        position: absolute;
+        z-index: 99999;
+        top: 150px;
+        height: 4100px;
+        width: 100vw;
+      //  border: 2px solid yellow;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 94%, rgba(9,9,121,0.006039915966386533) 98%, rgba(0,212,255,0) 100%);
+    }
+
+   
+  }

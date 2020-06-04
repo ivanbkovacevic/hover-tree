@@ -4,20 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test liquid</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
  
 </head>
-<body>
+<body >
+    <div class="intro">
+        <h2>TEST LIQUID</h2>
+    </div>
     <div class="landing">
-        <div class="intro">
-            <h2>TEST LIQUID</h2>
-        </div>
+        
         <div class="distortion"></div>
+        <div class="distortion1"></div>
+        <div class="svg-div">
+        <svg viewBox="0 0 340 333">
+
+            <path class="path" fill="white" stroke="black" stroke-width="4" d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+              s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+              C46.039,146.545,53.039,128.545,66.039,133.545z"/>
+          </svg>
+        </div>
+          <div class="svg-div">
+          <svg width="100" height="100">
+            <circle class="path1" cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="yellow" />
+          </svg>
+        </div>
+
+        <div class="svg-div-line">
+            <div class="cover"></div>
+            <svg height="4210" width="1500">
+                <line class="firstLine" x1="0" y1="0" x2="1500" y2="400" style="stroke:rgb(255,255,255,0.5);stroke-width:2;stroke-dasharray: 5" />
+                <line x1="1500" y1="400" x2="100" y2="800" style="stroke:rgb(255,255,255);stroke-width:2;stroke-dasharray: 10" />
+                <line x1="100" y1="800" x2="1300" y2="1500" style="stroke:rgb(255,255,255);stroke-width:2;stroke-dasharray: 10" />
+                <line x1="1300" y1="1500" x2="300" y2="4500" style="stroke:rgb(255,255,255);stroke-width:2;stroke-dasharray: 10" />
+                <polyline class="poly" points="110,110 400,525"
+                style="fill:none;stroke:rgba(155, 236, 5, 0.5);stroke-width:2;stroke-dasharray: 5" />
+              </svg>
+          </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js" integrity="sha256-V0EyXecXmQqSk1QW7iej2g+pzqX02oz78cnceES2ZCs=" crossorigin="anonymous"></script>
     <script src="./hover.js"></script>
     <script src="./app.js"></script>
+    <script src="./line.js"></script>
 </body>
 </html>

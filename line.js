@@ -1,5 +1,6 @@
 
 window.addEventListener('scroll', () => {
+
     const scrolled= window.scrollY;
         console.log(scrolled);
 
@@ -20,7 +21,7 @@ window.addEventListener('scroll', () => {
         let curveX2=100;
       poly.setAttribute('points',"100,100 1000,1000 100,2000" + " "+ curveX2+","+scrolled)
     }
-
+    document.querySelector("html").niceScroll();
     });
     
   

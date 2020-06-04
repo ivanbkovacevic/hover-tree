@@ -33,6 +33,17 @@
     background: rgb(11, 75, 15);
     height: 200px;
     color: white;
+
+    .aindex{
+      text-decoration: none;
+      color: white !important;
+      transition: transform .3s ease-out;
+      display: inline-block;
+    }
+    .aindex:hover{
+      transform: translateY(-10px);
+    }
+   
 }
 
 .svg-div{
@@ -95,23 +106,34 @@
 
 .background {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("sea.jpg");
+    top: 220px;
+    left: 330px;
+    height: 70vh;
+    width: 50vw;
+    background-image: url("oil.jpg");
     background-size: cover;
   
     
     .water {
         position: absolute;
-        background-image: url("sea-map.png");
+        background-image: url("oil.png");
         background-size: cover;
         top:0;
         left:0;
         height: 100%;
         width: 100%;
-        border: 2px solid green;
+       
         filter: url("#turbulence");
       }
+}
+
+.awater{
+  text-decoration: none;
+  color: white !important;
+  transition: transform .3s ease-out;
+  display: inline-block;
+}
+
+.awater:hover{
+  transform: skewX(-20deg);
 }

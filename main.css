@@ -45,6 +45,21 @@
   color: white;
 }
 
+.intro .aindex {
+  text-decoration: none;
+  color: white !important;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  display: inline-block;
+}
+
+.intro .aindex:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .svg-div {
   height: 300px;
   width: 300px;
@@ -113,24 +128,38 @@
 
 .background {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-image: url("sea.jpg");
+  top: 220px;
+  left: 330px;
+  height: 70vh;
+  width: 50vw;
+  background-image: url("oil.jpg");
   background-size: cover;
 }
 
 .background .water {
   position: absolute;
-  background-image: url("sea-map.png");
+  background-image: url("oil.png");
   background-size: cover;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border: 2px solid green;
   -webkit-filter: url("#turbulence");
           filter: url("#turbulence");
+}
+
+.awater {
+  text-decoration: none;
+  color: white !important;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  display: inline-block;
+}
+
+.awater:hover {
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
 }
 /*# sourceMappingURL=main.css.map */

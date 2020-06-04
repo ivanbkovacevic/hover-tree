@@ -12,7 +12,7 @@
 
 .landing {
   width: 100vw;
-  height: 100vh;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +24,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border: 3px solid #5c5656;
 }
 
 .intro {
@@ -38,9 +37,9 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background: #203d05;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
-  background: #0b4b0f;
   height: 200px;
   color: white;
 }
@@ -63,7 +62,6 @@
 .svg-div {
   height: 300px;
   width: 300px;
-  border: 2px solid red;
 }
 
 .path {
@@ -113,6 +111,7 @@
   overflow: hidden;
   background: #020024;
   position: relative;
+  margin-top: 60px;
 }
 
 .svg-div-line .cover {

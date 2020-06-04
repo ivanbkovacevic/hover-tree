@@ -19,7 +19,7 @@
     align-items: flex-start;
     border: 3px solid rgb(92, 86, 86);
 
-
+   
 }
 
 .intro{
@@ -91,3 +91,27 @@
 
    
   }
+///////////////////////////////////////////////////
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("sea.jpg");
+    background-size: cover;
+  
+    
+    .water {
+        position: absolute;
+        background-image: url("sea-map.png");
+        background-size: cover;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        border: 2px solid green;
+        filter: url("#turbulence");
+      }
+}

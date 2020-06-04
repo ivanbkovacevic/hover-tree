@@ -132,13 +132,13 @@
   left: 330px;
   height: 70vh;
   width: 50vw;
-  background-image: url("oil.jpg");
+  background-image: url("bazen.jpg");
   background-size: cover;
 }
 
 .background .water {
   position: absolute;
-  background-image: url("oil.png");
+  background-image: url("bazen.png");
   background-size: cover;
   top: 0;
   left: 0;

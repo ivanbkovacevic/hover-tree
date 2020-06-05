@@ -75,6 +75,27 @@ box-sizing: border-box;
             background: #ff8f42;
             border-radius: none !important;
             margin: 2px;
+            cursor: pointer;
+        }
+    }
+
+    .scrolling{
+        display: flex;
+        position: fixed;
+        top: 100px;
+        right: 100px;
+        width: 200px;
+        height: 200px;
+        background: #ff8f42;
+        color: white;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        p{
+            font-size: 30px;
+            font-weight: bold;
         }
     }
  

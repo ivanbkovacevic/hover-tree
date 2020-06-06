@@ -7,59 +7,30 @@
     <title>Anime</title>
 </head>
 <body>
-    <h1 class="anime-header">ANIME</h1>
+   <div class="root"></div>
     <div class="wraper">
-        <div class="rolling">
-            <div class="kvad kvad-0"><p>I</p></div>
-            <div class="kvad kvad-1"><p>C</p></div>
-            <div class="kvad kvad-2"><p>T</p></div>
-            <div class="kvad kvad-noco"><p> </p></div>
-            <div class="kvad kvad-4"><p>H</p></div>
-            <div class="kvad kvad-5"><p>U</p></div>
-            <div class="kvad kvad-6"><p>B</p></div>
-            <div class="kvad kvad-noco"><p> </p></div>
-            <div class="kvad kvad-8"><p>PA</p></div>
-        </div>
-
         <div class="spreading">
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <div class="spreading spreading-kvad">0</div>
-            <button onclick="launching()" class="spreading spreading-launching">LAUNCHING</button>
-            <button onclick="gigleStop()" class="spreading spreading-launching">stop</button>
+     
+            <input type="text" onchange="onSelectURL()"  id="mySelect"
+            placeholder="OR paste the image URL address" size="30" >
+            <button onclick="backToOrder()" class="spreading spreading-launching">SLOŽI SE</button>
+         
         </div>
         
-        <div class="scrolling"><p>0</p></div>
+     
+        
+        <div class="kvadWraper">
+            <div class="kvadShuff"></div> 
+           
+        </div>
+   
+      
+       
     </div>
 
     <script src="./anime.min.js"></script>
+
+    
     <script src="./myAnime.js"></script>
 </body>
 </html>

@@ -58,12 +58,17 @@ box-sizing: border-box;
         color: white;
 
         &-kvad{  
-            border: 1px solid white;
+        //    border: 1px solid white;
             padding: 0px;
             background: #ff8f42;
             width: 30px;
             height: 30px;
-            margin: 2px;
+            background-image: url('beach1.jpg');
+            background-position-x: 5px;
+            background-position-y: 5px;
+            background-repeat: no-repeat;
+            background-size: 180px 180px;
+         //   margin: 2px;
 
           
         }
@@ -98,5 +103,58 @@ box-sizing: border-box;
             font-weight: bold;
         }
     }
+ .kvadOrder{
+     border: 1px solid yellow;
+     width: 180px;
+     height: 180px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .kvadWraper{
+
+    width: 360px;
+    height: 180px;
+    color: #252423;
+    border: 1px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+
+    .kvadShuff{
+        border: 1px solid yellow;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 999999;
+        transition: all 0.8s;
+    
+       
+     }
+    
+     .kvadShuffMask{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        // width: 50%;
+        // height: 100%;
+        background: #252423;
+       
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        transition: all 0.8s;
+       }
+ }
+ 
  
 }

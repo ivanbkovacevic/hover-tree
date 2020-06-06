@@ -173,7 +173,6 @@ html {
 }
 
 .wraper .kvadWraper .kvadShuff {
-  border: 1px solid yellow;
   width: 180px;
   height: 180px;
   display: -webkit-box;
@@ -181,12 +180,14 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   position: relative;
   z-index: 999999;
   -webkit-transition: all 0.8s;

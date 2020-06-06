@@ -125,13 +125,14 @@ box-sizing: border-box;
     position: relative;
 
     .kvadShuff{
-        border: 1px solid yellow;
+    
         width: 180px;
         height: 180px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
+        align-content: flex-start;
         position: relative;
         z-index: 999999;
         transition: all 0.8s;

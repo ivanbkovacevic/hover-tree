@@ -1,4 +1,7 @@
-
+function ponovo(){
+  location.reload();
+}
+ 
 
 
 

@@ -9,11 +9,15 @@ html {
 }
 
 .wraper {
-  height: 1700px;
+  height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -21,6 +25,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #252423;
+  padding: 100px;
 }
 
 .wraper .rolling {
@@ -155,24 +160,7 @@ html {
           align-items: flex-start;
 }
 
-.wraper .kvadWraper {
-  width: 360px;
-  height: 180px;
-  color: #252423;
-  border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: relative;
-}
-
-.wraper .kvadWraper .kvadShuff {
+.wraper .kvadShuff {
   width: 180px;
   height: 180px;
   display: -webkit-box;
@@ -192,27 +180,7 @@ html {
   z-index: 999999;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-}
-
-.wraper .kvadWraper .kvadShuffMask {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  background: #252423;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  margin-top: 50px;
 }
 
 .distortion {

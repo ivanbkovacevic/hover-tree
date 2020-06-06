@@ -8,12 +8,14 @@ box-sizing: border-box;
 }
 
 .wraper{
-    height: 1700px;
+    height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: #252423;
+    padding: 100px;
 
     .rolling{
         height: 700px;
@@ -113,19 +115,9 @@ box-sizing: border-box;
      align-items: flex-start;
  }
 
- .kvadWraper{
-
-    width: 360px;
-    height: 180px;
-    color: #252423;
-    border: 1px solid white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
+ 
 
     .kvadShuff{
-    
         width: 180px;
         height: 180px;
         display: flex;
@@ -136,26 +128,27 @@ box-sizing: border-box;
         position: relative;
         z-index: 999999;
         transition: all 0.8s;
+        margin-top: 50px;
     
        
      }
     
-     .kvadShuffMask{
-        position: absolute;
-        top: 0;
-        left: 0%;
-        // width: 50%;
-        // height: 100%;
-        background: #252423;
+    //  .kvadShuffMask{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0%;
+    //     // width: 50%;
+    //     // height: 100%;
+    //     background: #252423;
        
-        display: flex;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        transition: all 0.8s;
-       }
- }
+    //     display: flex;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     align-items: flex-start;
+    //     transition: all 0.8s;
+    //    }
+ 
  
  
 }

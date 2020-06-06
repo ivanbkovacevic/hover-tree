@@ -28,9 +28,9 @@ html {
   padding: 100px;
 }
 
-.wraper .rolling {
-  height: 700px;
-  width: 30vw;
+.wraper .spreading {
+  height: 110px;
+  background: #252423;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,15 +38,18 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #252423;
+  color: white;
 }
 
-.wraper .rolling .kvad {
+.wraper .spreading .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,108 +59,15 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 350px;
+  height: 50px;
   background: #ff8f42;
-  color: white;
-}
-
-.wraper .rolling .kvad-noco {
-  background: #252423;
-}
-
-.wraper .rolling .kvad p {
-  color: #252423;
   font-weight: bold;
-  font-size: 30px;
-}
-
-.wraper .spreading {
-  padding: 3px;
-  width: 180px;
-  height: 200px;
-  background: #252423;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  border-radius: 10%;
-  color: white;
-}
-
-.wraper .spreading-kvad {
-  padding: 0px;
-  background: #ff8f42;
-  width: 30px;
-  height: 30px;
-  background-image: url("beach1.jpg");
-  background-position-x: 5px;
-  background-position-y: 5px;
-  background-repeat: no-repeat;
-  background-size: 180px 180px;
-}
-
-.wraper .spreading-launching {
-  width: 180px;
-  height: 30px;
-  border: 1px solid white;
-  background: #ff8f42;
-  border-radius: none !important;
+  font-size: 20px;
+  border: none;
+  outline: none;
   margin: 2px;
   cursor: pointer;
-}
-
-.wraper .scrolling {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  top: 100px;
-  right: 100px;
-  width: 200px;
-  height: 200px;
-  background: #ff8f42;
-  color: white;
-  border: 1px solid white;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10%;
-}
-
-.wraper .scrolling p {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.wraper .kvadOrder {
-  border: 1px solid yellow;
-  width: 180px;
-  height: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .wraper .kvadShuff {

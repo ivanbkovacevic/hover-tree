@@ -17,105 +17,36 @@ box-sizing: border-box;
     background-color: #252423;
     padding: 100px;
 
-    .rolling{
-        height: 700px;
-        width: 30vw;
+  
+
+    .spreading{ 
+        height: 110px;
+        background: #252423;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;;
-        align-items: flex-start;
-        background-color: #252423;
-        .kvad{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height:40px;
-            background: #ff8f42;
-            color: white;
-    
-            &-noco{
-                background: #252423;
-            }
-            p{
-                color: #252423;
-                font-weight: bold;
-                font-size: 30px;
-            }
-        }
-    }
-
-    .spreading{
-        padding: 3px;
-        width: 180px;
-        height: 200px;
-        background: #252423;
-      //  border: 1px solid white;
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-start;
-        align-content: flex-start;
-        border-radius: 10%;
+        align-items: flex-start;    
         color: white;
 
-        &-kvad{  
-        //    border: 1px solid white;
-            padding: 0px;
-            background: #ff8f42;
-            width: 30px;
-            height: 30px;
-            background-image: url('beach1.jpg');
-            background-position-x: 5px;
-            background-position-y: 5px;
-            background-repeat: no-repeat;
-            background-size: 180px 180px;
-         //   margin: 2px;
 
-          
-        }
-
-        &-launching{
-            width: 180px;
-            height: 30px;
-            border: 1px solid white;
+        .btn{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            width: 350px;
+            height: 50px;
             background: #ff8f42;
-            border-radius: none !important;
+           font-weight: bold;
+           font-size: 20px;
+           border: none;
+           outline: none;
             margin: 2px;
             cursor: pointer;
         }
     }
 
-    .scrolling{
-        display: flex;
-        position: fixed;
-        top: 100px;
-        right: 100px;
-        width: 200px;
-        height: 200px;
-        background: #ff8f42;
-        color: white;
-        border: 1px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10%;
-        p{
-            font-size: 30px;
-            font-weight: bold;
-        }
-    }
- .kvadOrder{
-     border: 1px solid yellow;
-     width: 180px;
-     height: 180px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: flex-start;
- }
 
- 
 
     .kvadShuff{
         width: 180px;
@@ -133,21 +64,7 @@ box-sizing: border-box;
        
      }
     
-    //  .kvadShuffMask{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0%;
-    //     // width: 50%;
-    //     // height: 100%;
-    //     background: #252423;
-       
-    //     display: flex;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     align-items: flex-start;
-    //     transition: all 0.8s;
-    //    }
+
  
  
  

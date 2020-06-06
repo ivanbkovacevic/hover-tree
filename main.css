@@ -1,15 +1,12 @@
-html {
+* {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.anime-header {
-  color: red;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wraper {
-  height: 100vh;
+  height: 1500px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,11 +22,11 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background-color: #252423;
-  padding: 100px;
+  padding: 50px;
 }
 
 .wraper .spreading {
-  height: 110px;
+  height: 285px;
   background: #252423;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,9 +37,9 @@ html {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -78,19 +75,48 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  z-index: 999999;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #2d2c2a;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  margin-top: 10px;
+}
+
+.wraper .uvod {
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  position: relative;
-  z-index: 999999;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  margin-top: 50px;
+  font-size: 20px;
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+.wraper .uvod label {
+  margin: 2px;
 }
 
 .distortion {

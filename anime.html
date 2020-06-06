@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Anime</title>
 </head>
@@ -10,13 +11,45 @@
   
     <div class="wraper">
         <div class="spreading">
-            <button onclick="backToOrder()" class="spreading btn"><p>SLOŽI SE</p></button>
-            <button onclick="ponovo()" class="spreading btn"><p>PONOVI</p></button>   
+            <div class="uvod">
+                    <label for="brKvad">Broj kvadrata:</label>
+                    <select onchange="brojKvadrata()" id="mySelectBr" name="brKvad">
+                        <option value="0">0 kom.</option>
+                        <option value="5">25 kom.</option>
+                        <option value="6">30 kom.</option>
+                        <option value="7">49 kom.</option>
+                        <option value="8">64 kom.</option>
+                        <option value="9">81 kom.</option>
+                        <option value="10">100 kom.</option>
+                    </select>
+                    <label for="VeKvad">Veličina kvadrata:</label>
+                    <select onchange="velKvadrata()" id="mySelectVe" name="VeKvad">
+                        <option value="0">0 px</option>
+                        <option value="50">50 px</option>
+                        <option value="60">60 px</option>
+                        <option value="70">70 px</option>
+                        <option value="80">80 px</option>
+                        <option value="90">90 px</option>
+                        <option value="100">100 px</option>
+                    </select>
+                </div>
+                  
+                    <button onclick="backToOrder()" class="spreading btn"><p>SLOŽI JE</p></button>
+                    <button onclick="ponovo()" class="spreading btn"><p>RESETUJ JE</p></button>
+              
         </div>
         
         <div class="kvadShuff"></div>   
-      
-    </div>
+      <!-- <div class="uvod">
+         
+          <ul>
+                <li>1. Izaberi parametre</li>
+                <li>2. Prikaži sliku</li>
+                <li>3. Složi je</li>
+                <li>4. Resetuj</li>
+          </ul> 
+   </div> -->
+</div>
 
     <script src="./anime.min.js"></script>
 

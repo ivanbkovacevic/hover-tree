@@ -17,26 +17,23 @@
                     <input type="text" name="myImg" id="myImg"  size="30" onchange="myImgF()"></input>
                     <p>Ili klikni za defaultnu sliku</p>
                     <button id="defImgBtn" onclick="defaultImg()">defaultna slika</button><span id="mySpan"></span>
-                    <label for="brKvad">Broj kvadrata:</label>
-                    <select onchange="brojKvadrata()" id="mySelectBr" name="brKvad">
-                        <option value="0">0 kom.</option>
-                        <option value="5">25 kom.</option>
-                        <option value="6">30 kom.</option>
-                        <option value="7">49 kom.</option>
-                        <option value="8">64 kom.</option>
-                        <option value="9">81 kom.</option>
-                        <option value="10">100 kom.</option>
-                    </select>
+                    <div class="brKvad">
+                        <button id="brKvad25" onclick="brojKvadrata(`brKvad25`,5)">25 kom</button>
+                        <button id="brKvad30" onclick="brojKvadrata(`brKvad30`,6)">30 kom</button>
+                        <button id="brKvad49" onclick="brojKvadrata(`brKvad49`,7)">49 kom</button>
+                        <button id="brKvad64" onclick="brojKvadrata(`brKvad64`,8)">64 kom</button>
+                        <button id="brKvad81" onclick="brojKvadrata(`brKvad81`,9)">81 kom</button>
+                        <button id="brKvad100" onclick="brojKvadrata(`brKvad100`,10)">100 kom</button>
+                    </div>
                     <label for="VeKvad">Veličina kvadrata:</label>
-                    <select onchange="velKvadrata()" id="mySelectVe" name="VeKvad">
-                        <option value="0">0 px</option>
-                        <option value="50">50 px</option>
-                        <option value="60">60 px</option>
-                        <option value="70">70 px</option>
-                        <option value="80">80 px</option>
-                        <option value="90">90 px</option>
-                        <option value="100">100 px</option>
-                    </select>
+                    <div class="VeKvad">
+                        <button id="VeKvad50" onclick="velKvadrata(`VeKvad50`,50)">50px</button>
+                        <button id="VeKvad60" onclick="velKvadrata(`VeKvad60`,60)">60px</button>
+                        <button id="VeKvad70" onclick="velKvadrata(`VeKvad70`,70)">70px</button>
+                        <button id="VeKvad80" onclick="velKvadrata(`VeKvad80`,80)">80px</button>
+                        <button id="VeKvad90" onclick="velKvadrata(`VeKvad90`,90)">90px</button>
+                        <button id="VeKvad100" onclick="velKvadrata(`VeKvad100`,100)">100px</button>
+                    </div>
                 </div>
                   
                     <button onclick="backToOrder()" class="spreading btn"><p>SLOŽI JE</p></button>

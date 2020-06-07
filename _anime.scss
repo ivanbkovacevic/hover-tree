@@ -63,6 +63,7 @@ font-family: 'Montserrat', sans-serif;
        
      }
     .uvod{
+
         padding-left: 40px;
         display: flex;
         flex-direction: column;
@@ -72,6 +73,21 @@ font-family: 'Montserrat', sans-serif;
         color: wheat;
         margin-bottom: 20px;
 
+        .brKvad{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+        }
+
+        .VeKvad{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4px;
+        }
         label{
             margin: 2px;
 

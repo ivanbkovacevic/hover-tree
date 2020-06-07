@@ -34,8 +34,7 @@ let cln;
 
     if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
       prikazi();
-      document.getElementById('mySelectBr').disabled = true;
-      document.getElementById('mySelectVe').disabled = true;
+
      }
   }
 
@@ -47,31 +46,29 @@ let cln;
    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
     console.log("prikayi")
-    document.getElementById('mySelectBr').disabled = true;
-    document.getElementById('mySelectVe').disabled = true;
+
    }
  }
 
- function brojKvadrata(){
-    kvadOneSide=document.getElementById('mySelectBr').value;
-   console.log(kvadOneSide)
+ function brojKvadrata(id,broj){
+  document.querySelectorAll(id).disabled = true;
+    kvadOneSide=broj;
+   console.log(id,broj,kvadOneSide)
 
    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
-  
-    document.getElementById('mySelectBr').disabled = true;
-    document.getElementById('mySelectVe').disabled = true;
+
    }
  }
 
- function velKvadrata(){
-   kvadSize=document.getElementById('mySelectVe').value;
+ function velKvadrata(id,vel){
+   document.getElementById(id).disabled = true;
+   kvadSize=vel;
+   console.log(typeof(vel))
    console.log(kvadSize)
    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
-   
-    document.getElementById('mySelectBr').disabled = true;
-    document.getElementById('mySelectVe').disabled = true;
+
   
    }
 }

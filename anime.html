@@ -16,23 +16,23 @@
                     <p>Najbolje je da četvrtasta bude slika</p>
                     <input type="text" name="myImg" id="myImg"  size="30" onchange="myImgF()"></input>
                     <p>Ili klikni za defaultnu sliku</p>
-                    <button id="defImgBtn" onclick="defaultImg()">defaultna slika</button><span id="mySpan"></span>
+                    <button id="defImgBtn" onclick="defaultImg()"><img src="./beach1.jpg" alt="defaultImg"></button><span id="mySpan"></span>
                     <div class="brKvad">
-                        <button id="brKvad25" onclick="brojKvadrata(`brKvad25`,5)">25 kom</button>
-                        <button id="brKvad30" onclick="brojKvadrata(`brKvad30`,6)">30 kom</button>
-                        <button id="brKvad49" onclick="brojKvadrata(`brKvad49`,7)">49 kom</button>
-                        <button id="brKvad64" onclick="brojKvadrata(`brKvad64`,8)">64 kom</button>
-                        <button id="brKvad81" onclick="brojKvadrata(`brKvad81`,9)">81 kom</button>
-                        <button id="brKvad100" onclick="brojKvadrata(`brKvad100`,10)">100 kom</button>
+                        <button class="btnParBrKvad" id="brKvad25" onclick="brojKvadrata(`brKvad25`,5,`.btnParBrKvad`)">25 kom</button>
+                        <button class="btnParBrKvad" id="brKvad30" onclick="brojKvadrata(`brKvad30`,6,`.btnParBrKvad`)">30 kom</button>
+                        <button class="btnParBrKvad" id="brKvad49" onclick="brojKvadrata(`brKvad49`,7,`.btnParBrKvad`)">49 kom</button>
+                        <button class="btnParBrKvad" id="brKvad64" onclick="brojKvadrata(`brKvad64`,8,`.btnParBrKvad`)">64 kom</button>
+                        <button class="btnParBrKvad" id="brKvad81" onclick="brojKvadrata(`brKvad81`,9,`.btnParBrKvad`)">8 1 kom</button>
+                        <button class="btnParBrKvad" id="brKvad100" onclick="brojKvadrata(`brKvad100`,10,`.btnParBrKvad`)">100 kom</button>
                     </div>
                     <label for="VeKvad">Veličina kvadrata:</label>
                     <div class="VeKvad">
-                        <button id="VeKvad50" onclick="velKvadrata(`VeKvad50`,50)">50px</button>
-                        <button id="VeKvad60" onclick="velKvadrata(`VeKvad60`,60)">60px</button>
-                        <button id="VeKvad70" onclick="velKvadrata(`VeKvad70`,70)">70px</button>
-                        <button id="VeKvad80" onclick="velKvadrata(`VeKvad80`,80)">80px</button>
-                        <button id="VeKvad90" onclick="velKvadrata(`VeKvad90`,90)">90px</button>
-                        <button id="VeKvad100" onclick="velKvadrata(`VeKvad100`,100)">100px</button>
+                        <button class="btnParVelKvad" id="VeKvad50" onclick="velKvadrata(`VeKvad50`,50,`.btnParVelKvad`)">50px</button>
+                        <button class="btnParVelKvad" id="VeKvad60" onclick="velKvadrata(`VeKvad60`,60,`.btnParVelKvad`)">60px</button>
+                        <button class="btnParVelKvad" id="VeKvad70" onclick="velKvadrata(`VeKvad70`,70,`.btnParVelKvad`)">70px</button>
+                        <button class="btnParVelKvad" id="VeKvad80" onclick="velKvadrata(`VeKvad80`,80,`.btnParVelKvad`)">80px</button>
+                        <button class="btnParVelKvad" id="VeKvad90" onclick="velKvadrata(`VeKvad90`,90,`.btnParVelKvad`)">90px</button>
+                        <button class="btnParVelKvad" id="VeKvad100" onclick="velKvadrata(`VeKvad100`,100,`.btnParVelKvad`)">100px</button>
                     </div>
                 </div>
                   

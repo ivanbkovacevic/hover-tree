@@ -50,8 +50,15 @@ let cln;
    }
  }
 
- function brojKvadrata(id,broj){
+ function brojKvadrata(id,broj,klasaBr){
+  document.getElementById(id).style.backgroundColor=('#646362');
   document.getElementById(id).disabled = true;
+  let dugmadBr=document.querySelectorAll(klasaBr);
+  console.log(dugmadBr)
+  for(let i in dugmadBr){
+    dugmadBr[i].disabled=true;
+  }
+
     kvadOneSide=broj;
    console.log(id,broj,kvadOneSide)
 
@@ -61,8 +68,15 @@ let cln;
    }
  }
 
- function velKvadrata(id,vel){
-   document.getElementById(id).disabled = true;
+ function velKvadrata(id,vel,klasaVel){
+  document.getElementById(id).style.backgroundColor=('#646362');
+  document.getElementById(id).disabled = true;
+  let dugmadVel=document.querySelectorAll(klasaVel);
+  console.log(dugmadVel)
+  for(let i in dugmadVel){
+    dugmadVel[i].disabled=true;
+  }
+
    kvadSize=vel;
    console.log(typeof(vel))
    console.log(kvadSize)

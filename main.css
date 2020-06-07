@@ -114,6 +114,27 @@
   margin-bottom: 20px;
 }
 
+.wraper .uvod .btnParBrKvad {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2px;
+  cursor: pointer;
+  color: wheat;
+}
+
+.wraper .uvod .btnParBrKvad:hover {
+  background: #373634;
+}
+
+.wraper .uvod img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
 .wraper .uvod .brKvad {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +163,21 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 4px;
+}
+
+.wraper .uvod .VeKvad .btnParVelKvad {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2px;
+  cursor: pointer;
+  color: wheat;
+}
+
+.wraper .uvod .VeKvad .btnParVelKvad:hover {
+  background: #373634;
 }
 
 .wraper .uvod label {

@@ -1,3 +1,6 @@
+ $bcgCol:#252423;
+ $bcgCol-active:#646362;
+ 
  *{
 margin: 0;
 box-sizing: border-box;
@@ -73,6 +76,29 @@ font-family: 'Montserrat', sans-serif;
         color: wheat;
         margin-bottom: 20px;
 
+        .btnParBrKvad{
+             width: 60px;
+             height: 60px;
+             background:none;
+            border: none;
+            outline: none;
+             margin: 2px;
+             cursor: pointer;
+             color: wheat;
+        }
+
+        .btnParBrKvad:hover{
+            background:   lighten($color: $bcgCol, $amount: 7);
+             }
+
+          
+
+        img{
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+
         .brKvad{
             display: flex;
             flex-wrap: wrap;
@@ -87,6 +113,22 @@ font-family: 'Montserrat', sans-serif;
             justify-content: center;
             align-items: center;
             margin-bottom: 4px;
+
+            .btnParVelKvad{
+                width: 60px;
+                height: 60px;
+                background:none;
+               border: none;
+               outline: none;
+                margin: 2px;
+                cursor: pointer;
+                color: wheat;
+           }
+   
+           .btnParVelKvad:hover{
+               background:   lighten($color: $bcgCol, $amount: 7);
+                }
+
         }
         label{
             margin: 2px;

@@ -51,7 +51,7 @@ let cln;
  }
 
  function brojKvadrata(id,broj){
-  document.querySelectorAll(id).disabled = true;
+  document.getElementById(id).disabled = true;
     kvadOneSide=broj;
    console.log(id,broj,kvadOneSide)
 

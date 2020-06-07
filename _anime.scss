@@ -1,12 +1,22 @@
  $bcgCol:#252423;
  $bcgCol-active:#646362;
- $fontColor: rgb(151, 137, 109);
+ $fontColor: wheat;
+ $fontColor-deactiv: rgb(122, 111, 90);
  
  *{
 margin: 0;
 box-sizing: border-box;
 font-family: 'Montserrat', sans-serif;
 }
+
+.deactive{
+    color:  $fontColor-deactiv !important;
+ }
+
+ .active{
+     color:  $fontColor !important;
+     background-color: $bcgCol-active;
+ }
 
 .wraper{
     height: 1500px;
@@ -67,6 +77,14 @@ font-family: 'Montserrat', sans-serif;
        
      }
     .uvod{
+       
+        #defImgBtn{
+            border: none;
+            outline: none;
+            padding: 1px;
+            width: 50px;
+            height: 50px;
+        }
 
         padding-left: 10px;
         display: flex;
@@ -75,11 +93,11 @@ font-family: 'Montserrat', sans-serif;
         align-items: flex-start;
         font-size: 20px;
         color: wheat;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         .btnParBrKvad{
-             width: 60px;
-             height: 60px;
+             width: 50px;
+             height: 50px;
              background:none;
             border: none;
             outline: none;
@@ -95,8 +113,8 @@ font-family: 'Montserrat', sans-serif;
           
 
         img{
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             cursor: pointer;
         }
 
@@ -116,8 +134,8 @@ font-family: 'Montserrat', sans-serif;
             margin-bottom: 4px;
 
             .btnParVelKvad{
-                width: 60px;
-                height: 60px;
+                width: 50px;
+                height: 50px;
                 background:none;
                border: none;
                outline: none;

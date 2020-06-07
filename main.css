@@ -5,6 +5,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.deactive {
+  color: #7a6f5a !important;
+}
+
+.active {
+  color: wheat !important;
+}
+
 .wraper {
   height: 1500px;
   width: 100vw;
@@ -111,12 +119,20 @@
           align-items: flex-start;
   font-size: 20px;
   color: wheat;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.wraper .uvod #defImgBtn {
+  border: none;
+  outline: none;
+  padding: 1px;
+  width: 50px;
+  height: 50px;
 }
 
 .wraper .uvod .btnParBrKvad {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: none;
   border: none;
   outline: none;
@@ -130,8 +146,8 @@
 }
 
 .wraper .uvod img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
@@ -166,8 +182,8 @@
 }
 
 .wraper .uvod .VeKvad .btnParVelKvad {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: none;
   border: none;
   outline: none;

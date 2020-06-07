@@ -51,15 +51,15 @@ let cln;
  }
 
  function brojKvadrata(id,broj,klasaBr){
-  document.getElementById(id).style.backgroundColor=('#646362');
- 
+  document.getElementById(id).classList.add("active");
  
   document.getElementById(id).disabled = true;
   let dugmadBr=document.querySelectorAll(klasaBr);
   console.log(dugmadBr)
-  for(let i in dugmadBr){
-  
+  for(let i=0; i<dugmadBr.length;i++){
+    dugmadBr[i].classList.add("deactive");
     dugmadBr[i].disabled=true;
+   
   }
  
     kvadOneSide=broj;
@@ -72,11 +72,12 @@ let cln;
  }
 
  function velKvadrata(id,vel,klasaVel){
-  document.getElementById(id).style.backgroundColor=('#646362');
+    document.getElementById(id).classList.add("active");
   document.getElementById(id).disabled = true;
   let dugmadVel=document.querySelectorAll(klasaVel);
   console.log(dugmadVel)
-  for(let i in dugmadVel){
+  for(let i=0; i<dugmadVel.length;i++){
+    dugmadVel[i].classList.add("deactive");
     dugmadVel[i].disabled=true;
   }
 

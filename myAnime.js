@@ -7,7 +7,7 @@ let kvadNumberOf=kvadOneSide*kvadOneSide;
 let kvadNum;
 let kvadNumArr=[];
 let min = 1;
-let max = 49;
+let max = kvadNumberOf;
 let clickOrd=-1;
 let transFX=-180;
 let transX=0;

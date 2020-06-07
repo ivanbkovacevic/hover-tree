@@ -27,10 +27,18 @@ let cln;
   let kvadShuffCont;
   let myImg;
 
+  function defaultImg(){
+    myImg="beach1.jpg"
+    document.getElementById('mySpan').innerText="Cool!";
+    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
+      prikazi();
+      document.getElementById('mySelectBr').disabled = true;
+      document.getElementById('mySelectVe').disabled = true;
+     }
+  }
   function myImgF(){
     myImg=document.getElementById('myImg').value;
-   console.log(myImg)
-
+  
    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
     console.log("prikayi")

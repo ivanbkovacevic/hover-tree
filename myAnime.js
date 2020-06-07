@@ -25,14 +25,27 @@ let cln;
   let kvadFinalArr=[];
   let kvadArrayShuffled;
   let kvadShuffCont;
+  let myImg;
+
+  function myImgF(){
+    myImg=document.getElementById('myImg').value;
+   console.log(myImg)
+
+   if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
+    prikazi();
+    console.log("prikayi")
+    document.getElementById('mySelectBr').disabled = true;
+    document.getElementById('mySelectVe').disabled = true;
+   }
+ }
 
  function brojKvadrata(){
     kvadOneSide=document.getElementById('mySelectBr').value;
    console.log(kvadOneSide)
 
-   if(kvadSize!=null && kvadNumberOf!=null){
+   if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
-    console.log("prikayi")
+  
     document.getElementById('mySelectBr').disabled = true;
     document.getElementById('mySelectVe').disabled = true;
    }
@@ -41,9 +54,9 @@ let cln;
  function velKvadrata(){
    kvadSize=document.getElementById('mySelectVe').value;
    console.log(kvadSize)
-  if(kvadSize!=null && kvadOneSide!=null){
+   if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
-    console.log("prikayi")
+   
     document.getElementById('mySelectBr').disabled = true;
     document.getElementById('mySelectVe').disabled = true;
   
@@ -52,32 +65,6 @@ let cln;
 
 
 function prikazi(){
-
-  // let kvadNum;
-  // let kvadNumArr=[];
-  // let min = 1;
-  // let max = 49;
-  // let clickOrd=-1;
-  // let transFX=-180;
-  // let transX=0;
-  // let transY=0;
-  //let kvadSize=80;
-  // let kvadNumberOf=kvadOneSide*kvadOneSide;
-  //let kvadOneSide=7;
-  // let kvadCont= document.querySelector('.kvadShuff');
-  // let kvadOriginalArr=[];
-  // let kvadObj={};
-  
-  // let kvadObjOrgArr=[];
-  
-  // let kvadPos=-1;
-  // let kvadPosArr=[];
-  // let kvadPositionShuffled=-1;
-  // let kvadPositionShuffledArr=[];
-  // let kvadRetOrd=0;
-  // let kvadFinalArr=[];
-  
-  // let cln;
   
   kvadCont.style.width=(`${kvadSize*kvadOneSide+10}px`);
   
@@ -87,13 +74,12 @@ function prikazi(){
     for(let k=0; k<kvadOneSide; k++){
       kvadPos++
       let kvad=document.createElement("div");
-      kvadObj={position:kvadPos,height:`${kvadSize}px`,width:`${kvadSize}px` ,bcgImage:`url(beach1.jpg)`,
+      kvadObj={position:kvadPos,height:`${kvadSize}px`,width:`${kvadSize}px` ,bcgImage:`url(${myImg})`,
       bcgPosition:`${kvadSize*k*-1}px ${kvadSize*i*-1}px`, zIndex:`99`,transition:`all 3.5s ease-out`,
       xpoz:k*kvadNumberOf,yoz:i*kvadNumberOf,
      bcgSize:`${kvadOneSide*kvadSize}px ${kvadOneSide*kvadSize}px`
     };
   
-    
       kvad.style.height=(kvadObj.height);
       kvad.style.width=(kvadObj.width);
       kvad.style.backgroundImage=(kvadObj.bcgImage);
@@ -108,8 +94,6 @@ function prikazi(){
      kvadArrayShuffled= kvadOriginalArr.sort(()=>Math.random()-0.5); //shufleing the array of kvads
      kvadShuffCont= document.querySelector('.kvadShuff');
     
-   
-  
     for(let i in kvadArrayShuffled){
       kvadPositionShuffled++
        kvadPositionShuffledArr.push(kvadPositionShuffled)
@@ -120,8 +104,6 @@ function prikazi(){
     
      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
-  
-
 }/////////////////////////////////prikazi sliku
 
 function backToOrder(){
@@ -144,12 +126,6 @@ function backToOrder(){
   }
 
 }///////////back to order
-
-
-// }else{
-//    document.querySelector(".uvod").style.transform=('translateY:-100px')
-// }//////////////// pocetna
-
 
 
 

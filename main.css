@@ -26,7 +26,7 @@
 }
 
 .wraper .spreading {
-  height: 285px;
+  height: 300px;
   background: #252423;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +117,11 @@
 
 .wraper .uvod label {
   margin: 2px;
+}
+
+.wraper .uvod p {
+  font-size: 12px;
+  margin-bottom: 2px;
 }
 
 .distortion {

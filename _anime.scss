@@ -17,7 +17,7 @@ font-family: 'Montserrat', sans-serif;
   
 
     .spreading{ 
-        height: 285px;
+        height: 300px;
         background: #252423;
         display: flex;
         flex-direction: column;
@@ -76,8 +76,13 @@ font-family: 'Montserrat', sans-serif;
 
         label{
             margin: 2px;
-        }
 
+           
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
     }
 
  

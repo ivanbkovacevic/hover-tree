@@ -1,5 +1,6 @@
  $bcgCol:#252423;
  $bcgCol-active:#646362;
+ $fontColor: rgb(151, 137, 109);
  
  *{
 margin: 0;
@@ -67,7 +68,7 @@ font-family: 'Montserrat', sans-serif;
      }
     .uvod{
 
-        padding-left: 40px;
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

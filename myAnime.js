@@ -52,13 +52,16 @@ let cln;
 
  function brojKvadrata(id,broj,klasaBr){
   document.getElementById(id).style.backgroundColor=('#646362');
+ 
+ 
   document.getElementById(id).disabled = true;
   let dugmadBr=document.querySelectorAll(klasaBr);
   console.log(dugmadBr)
   for(let i in dugmadBr){
+  
     dugmadBr[i].disabled=true;
   }
-
+ 
     kvadOneSide=broj;
    console.log(id,broj,kvadOneSide)
 

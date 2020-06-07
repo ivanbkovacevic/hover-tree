@@ -30,15 +30,20 @@ let cln;
   function defaultImg(){
     myImg="beach1.jpg"
     document.getElementById('mySpan').innerText="Cool!";
+    document.getElementById('myImg').disabled=true;
+
     if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
       prikazi();
       document.getElementById('mySelectBr').disabled = true;
       document.getElementById('mySelectVe').disabled = true;
      }
   }
+
   function myImgF(){
     myImg=document.getElementById('myImg').value;
-  
+    if(myImg.length!=0){
+     document.getElementById('defImgBtn').disabled=true;
+    }
    if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
     prikazi();
     console.log("prikayi")

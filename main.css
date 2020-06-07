@@ -129,6 +129,10 @@
   font-size: 15px;
 }
 
+.wraper .uvod input {
+  margin-bottom: 3px;
+}
+
 .wraper footer {
   color: wheat;
   margin-top: 15px;

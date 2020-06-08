@@ -2,6 +2,8 @@
  $bcgCol-active:#646362;
  $fontColor: wheat;
  $fontColor-deactiv: rgb(122, 111, 90);
+ $bcg-orange-active: #ff8f42;
+ $bcg-orange-deactive: rgb(129, 73, 35);
  
  *{
 margin: 0;
@@ -11,7 +13,14 @@ font-family: 'Montserrat', sans-serif;
 
 .deactive{
     color:  $fontColor-deactiv !important;
- }
+ 
+}
+
+.slozije-deactiv{
+    background-color:  $bcg-orange-deactive !important;;
+    color:  $fontColor-deactiv !important;
+
+}
 
  .active{
      color:  $fontColor !important;

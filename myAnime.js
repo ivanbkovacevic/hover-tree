@@ -30,7 +30,7 @@ let cln;
   function defaultImg(){
     myImg="beach1.jpg"
     document.getElementById('mySpan').innerText="Cool!";
-    document.getElementById('myImg').disabled=true;
+    document.getElementById('defImgBtn').disabled=true;
 
     if(kvadSize!=null && kvadNumberOf!=null && myImg.length!=0){
       prikazi();
@@ -126,10 +126,10 @@ function prikazi(){
       kvadPositionShuffled++
        kvadPositionShuffledArr.push(kvadPositionShuffled)
          kvadShuffCont.appendChild(kvadArrayShuffled[i]);
-         cln = kvadArrayShuffled[i].cloneNode(true);
+         cln = kvadArrayShuffled[i].cloneNode(true); 
       }
   
-    
+ 
      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
 }/////////////////////////////////prikazi sliku
@@ -153,6 +153,9 @@ function backToOrder(){
     }
   }
 
+  let btnSloziJe= document.getElementById('sloziJe');
+  btnSloziJe.classList.add('slozije-deactiv');
+  btnSloziJe.disabled=true;
 }///////////back to order
 
 

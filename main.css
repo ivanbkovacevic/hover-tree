@@ -6,11 +6,17 @@
 }
 
 .deactive {
-  color: #7a6f5a !important;
+  color: #c9b898 !important;
+}
+
+.slozije-deactiv {
+  background-color: #814923 !important;
+  color: #c9b898 !important;
 }
 
 .active {
   color: wheat !important;
+  background-color: #646362;
 }
 
 .wraper {

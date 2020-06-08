@@ -226,6 +226,33 @@
   margin-top: 15px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #020236;
+}
+
+/* 
+////////////////PRE SET/////////////////////////// */
 .distortion {
   width: 400px;
   height: 300px;

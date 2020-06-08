@@ -34,8 +34,14 @@ body {
 ////////////////PRE SET/////////////////////////// */
 
 .wraper{
+    height: 5000px;
     .svg-line{
     color:red
+    }
+
+    &-test{
+        height: 4000px;
+        background-color: green;
     }
 }
 

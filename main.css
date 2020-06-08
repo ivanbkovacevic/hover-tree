@@ -253,8 +253,17 @@ body {
 
 /* 
 ////////////////PRE SET/////////////////////////// */
+.wraper {
+  height: 5000px;
+}
+
 .wraper .svg-line {
   color: red;
+}
+
+.wraper-test {
+  height: 4000px;
+  background-color: green;
 }
 
 .distortion {

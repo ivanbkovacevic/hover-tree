@@ -9,31 +9,54 @@
 //   duration: 20000,
 //   loop: true
 // });
-let brVal=500;
-window.addEventListener("scroll",getNumVal);
-function getNumVal(){
-  brVal=window.scrollY;
-  console.log(brVal)
+let scroll;
+$(document).ready(function(){
+    $(window).scroll(function (event) {
+         scroll = $(window).scrollTop();
+        console.log(scroll);
+    });
 
-}
 
-var tl = anime.timeline({
+let brVal=1000;
+scroll > 100 ? tl.pause : null;
+ var tl = anime.timeline({
     easing: 'easeOutExpo',
     duration: 2750,
-    autoplay:false,
+    
+   
   });
 
   tl.add({
     targets: '.svg-line path',
-    strokeDashoffset: [anime.setDashoffset, brVal],
+    strokeDashoffset: [anime.setDashoffset, 10],
     easing: 'easeInOutSine',
     duration: 3000,
-    delay: function(el, i) { return i * 250 },
     autoplay:false,
+    delay: function(el, i) { return i * 250 },
     direction: 'linear',
   })
 
-  window.addEventListener("scroll", tl.play);
+  
+
+
+
+// var tl = anime.timeline({
+//     easing: 'easeOutExpo',
+//     duration: 2750,
+//     autoplay:false,
+//   });
+
+//   tl.add({
+//     targets: '.svg-line path',
+//     strokeDashoffset: [anime.setDashoffset, brVal],
+//     easing: 'easeInOutSine',
+//     duration: 3000,
+//     delay: function(el, i) { return i * 250 },
+//     autoplay:false,
+//     direction: 'linear',
+//   })
+
+//   window.addEventListener("scroll", tl.play);
 
    
    
@@ -47,4 +70,5 @@ var tl = anime.timeline({
 //     delay: function(el, i) { return i * 250 },
 //     direction: 'linear',
 //   //  loop: true,
-//   });
+//   });  
+});

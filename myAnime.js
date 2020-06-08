@@ -103,7 +103,7 @@ function prikazi(){
       kvadPos++
       let kvad=document.createElement("div");
       kvadObj={position:kvadPos,height:`${kvadSize}px`,width:`${kvadSize}px` ,bcgImage:`url(${myImg})`,
-      bcgPosition:`${kvadSize*k*-1}px ${kvadSize*i*-1}px`, zIndex:`99`,transition:`all 3.5s ease-out`,
+      bcgPosition:`${kvadSize*k*-1}px ${kvadSize*i*-1}px`, zIndex:`99`,
       xpoz:k*kvadNumberOf,yoz:i*kvadNumberOf,
      bcgSize:`${kvadOneSide*kvadSize}px ${kvadOneSide*kvadSize}px`
     };
@@ -146,7 +146,7 @@ function backToOrder(){
           
           kvadFinal.style.transform=(`translateX:${kvadOriginalArr[i].transX*-1}`);
           kvadFinal.style.transform=(`translateY:${kvadOriginalArr[i].transY*-1}`);
-          kvadFinal.style.transition=('all 3.5s ease-out');
+          kvadFinal.style.transition=('all 4s ease-out');
         
           kvadFinalArr.push(kvadFinal);
 

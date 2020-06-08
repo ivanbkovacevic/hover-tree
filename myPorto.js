@@ -18,23 +18,23 @@ $(document).ready(function(){
 
 
 let brVal=1000;
-scroll > 100 ? tl.pause : null;
- var tl = anime.timeline({
-    easing: 'easeOutExpo',
-    duration: 2750,
-    
-   
-  });
 
-  tl.add({
+
+ var animation = anime({
     targets: '.svg-line path',
     strokeDashoffset: [anime.setDashoffset, 10],
     easing: 'easeInOutSine',
     duration: 3000,
-    autoplay:false,
+   // autoplay:false,
     delay: function(el, i) { return i * 250 },
     direction: 'linear',
-  })
+   
+  });
+
+  if( scroll > 100){
+    animation.pause();
+  }
+
 
   
 
